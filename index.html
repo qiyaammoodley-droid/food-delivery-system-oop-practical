@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Delivery System</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <nav><span class="logo">BiteBox</span><span class="nav-note">Food delivery practical</span></nav>
+    <div class="hero-content">
+      <p class="eyebrow">GOOD FOOD, SIMPLE ORDERING</p>
+      <h1>Your next meal<br /><span>starts here.</span></h1>
+      <p>Choose your favourites and see the delivery fee and total update as you go.</p>
+      <a href="#menu-section" class="primary-link">View menu ↓</a>
+    </div>
+    <div class="hero-stamp">MADE<br />FRESH<br /><span>★</span></div>
+  </header>
+
+  <main>
+    <section id="menu-section" class="section">
+      <div class="section-heading"><div><p class="eyebrow">THE MENU</p><h2>Pick your favourites</h2></div><p class="muted">Four options to get started</p></div>
+      <div id="menu" class="menu-grid"></div>
+    </section>
+
+    <section class="order-section">
+      <div class="section-heading"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your order</h2></div><button id="clear-order" class="text-button">Clear order</button></div>
+      <div class="order-card">
+        <div id="order-items"></div>
+        <div class="totals">
+          <div><span>Food total</span><strong id="food-total">R 0.00</strong></div>
+          <div><span>Delivery fees</span><strong id="delivery-total">R 0.00</strong></div>
+          <div class="final-total"><span>Final total</span><strong id="final-total">R 0.00</strong></div>
+        </div>
+        <p id="message" class="message" aria-live="polite">Add an item to begin.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span class="logo">BiteBox</span><p>JavaScript Essentials 2 · Object-Oriented Programming</p></footer>
+</body>
+</html>
